@@ -45,7 +45,7 @@ namespace ProyPrivDes.Controllers
             Stream stream = reporte.ExportToStream(ExportFormatType.PortableDocFormat);
             return new FileStreamResult(stream, "application/pdf");
         }
-
+        //Metodo para mostrar lista de materiales de extraccion
         public JsonResult listarExtraccion()
         {
             ConexionDataContext bd = new ConexionDataContext();

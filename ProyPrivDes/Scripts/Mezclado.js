@@ -1,10 +1,11 @@
-﻿listar();
+﻿//funcion para listar
+listar();
 function listar() {
     $.get("Mezclado/listarMezclado", function (data) {
         crearListado(["Id", "Nombre", "Cantidad", "Finura", "Fecha Mezclado"], data);
     })
 }
-
+//funcion para hacer busueda sensitiva
 var nombreMat = document.getElementById("txtnombre");
 nombreMat.onkeyup = function () {
     var nombre = document.getElementById("txtnombre").value;
