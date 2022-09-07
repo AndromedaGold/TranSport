@@ -1,0 +1,125 @@
+﻿CREATE DATABASE Transport;
+
+usuario: transadmin
+contraseña: admintrans
+
+CREATE TABLE Extraccion(
+	Id int not null identity (1,1) Primary Key,
+	NombreMaterial nvarchar(150),
+	Cantidad decimal(16,2),
+	Fecha datetime,
+	Pureza nvarchar(50),
+	HabilitadoId int,
+	CONSTRAINT fk_Habilitado_Extraccion FOREIGN KEY (HabilitadoId) REFERENCES Habilitado(Id)
+);
+
+CREATE TABLE Finura(
+	Id int not null identity (1,1) Primary Key,
+	Descripcion nvarchar(150) 
+);
+
+CREATE TABLE Mezclado(
+	Id int not null identity (1,1) Primary Key,
+	MateriaPrim nvarchar (150),
+	Cantidad decimal (16,2),
+	FinuraId int,
+	Fecha datetime,
+	HabilitadoId int,
+	CONSTRAINT fk_Finura_Mezclado FOREIGN KEY (FinuraId) REFERENCES Finura(Id),
+	CONSTRAINT fk_Habilitado_Mezclado FOREIGN KEY (HabilitadoId) REFERENCES Habilitado(Id)
+);
+
+CREATE TABLE TipoPiso(
+	Id int not null identity (1,1) Primary Key,
+	Descripción nvarchar(150)
+);
+
+CREATE TABLE Fabricacion(
+	Id int not null identity (1,1) Primary Key,
+	Nombre nvarchar (150),
+	TipoPisoId int,
+	Color nvarchar(100),
+	CantidMaterPrim decimal(16,2),
+	CantidadFabri int,
+	Fecha datetime,
+	HabilitadoId int,
+	CONSTRAINT fk_TipoPiso_Fabricacion FOREIGN KEY (TipoPisoId) REFERENCES TipoPiso(Id),
+	CONSTRAINT fk_Habilitado_Fabricacion FOREIGN KEY (HabilitadoId) REFERENCES Habilitado(Id)
+);
+
+CREATE TABLE Habilitado(
+	Id int not null identity (1,1) Primary Key,
+	Habilitado int
+);
+
+CREATE TABLE TipoMaq(
+	Id int not null identity (1,1) Primary Key,
+	Descripcion nvarchar(150)
+);
+
+CREATE TABLE EstadoMaq(
+	Id int not null identity (1,1) Primary Key,
+	Descripcion nvarchar(150)
+);
+
+CREATE TABLE Combustible(
+	Id int not null identity (1,1) Primary Key,
+	Descripcion nvarchar(150)
+);
+
+CREATE TABLE VentaMaq(
+	Id int not null identity (1,1) Primary Key,
+	Nombre nvarchar (150),	
+	Color nvarchar(100),
+	Peso nvarchar(50),	
+	Marca nvarchar(100),
+	Modelo nvarchar(100),
+	CombustibleId int,
+	TipoMaqId int,
+	EstadoId int,
+	HabilitadoId int,
+	FechaVenta datetime,
+	CONSTRAINT fk_Combustible_VentaMaq FOREIGN KEY (CombustibleId) REFERENCES Combustible(Id),	
+	CONSTRAINT fk_TipoMaq_VentaMaq FOREIGN KEY (TipoMaqId) REFERENCES TipoMaq(Id),
+	CONSTRAINT fk_EstadoMaq_VentaMaq FOREIGN KEY (EstadoId) REFERENCES EstadoMaq(Id),
+);
+
+CREATE TABLE RentaMaq(
+	Id int not null identity (1,1) Primary Key,
+	Nombre nvarchar(150),
+	Color nvarchar(100),
+	Marca nvarchar(150),
+	Modelo nvarchar(150),
+	Precio decimal(16,2)
+	CombustibleId int,
+	TipoMaqId int,
+	HabilitadoId int,
+	FechaRenta datetime,
+	CONSTRAINT fk_combustible_rentamaq FOREIGN KEY (CombustibleId) REFERENCES Combustible(Id),	
+	CONSTRAINT fk_tipoMaq_rentamaq FOREIGN KEY (TipoMaqId) REFERENCES TipoMaq(Id),
+);
+
+CREATE TABLE Estado(
+	Id int not null Primary Key,
+	Estado nvarchar(50)
+);
+
+CREATE TABLE Coordinador(
+	Id int not null identity (1,1) Primary Key,
+	Nombre nvarchar(100),
+	Apellido nvarchar(100),
+	Telefono nvarchar(100),
+	FechaAlt datetime,
+	EstadoId int,
+	CONSTRAINT fk_estado_coor FOREIGN KEY (EstadoId) REFERENCES Estado(Id)
+);
+CREATE TABLE Operador(
+	Id int not null identity (1,1) Primary Key,
+	Nombre nvarchar(100),
+	Apellido nvarchar(100),
+	Telefono nvarchar(100),
+	FechaAlt datetime,
+	EstadoId int,
+	CONSTRAINT fk_estado_cola FOREIGN KEY (EstadoId) REFERENCES Estado(Id)
+);
+

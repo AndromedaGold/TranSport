@@ -1,0 +1,54 @@
+﻿@using ProyPrivDes.Models;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - TransPort</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @{
+                    int nElementos = Variable.acciones.Count();
+                    for (var i = 0; i < nElementos; i++)
+                    {
+                        @Html.ActionLink(Variable.mensajes[i], Variable.acciones[i], Variable.controladores[i], new { area = "" }, new { @class = "navbar-brand" })
+                    }
+                }
+
+                @*@Html.ActionLink("Venta Maq", "Index", "VentaMaq", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Renta Maq", "Index", "RentaMaq", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Extraccion", "Index", "Extraccion", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Fabricacion", "Index", "Fabricacion", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Mezclado", "Index", "Mezclado", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Venta Mat", "Index", "VentaMat", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Coordinador", "Index", "Coordinador", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Operador", "Index", "Operador", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Roles", "Index", "RolPagina", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Usuarios", "Index", "Usuario", new { area = "" }, new { @class = "navbar-brand" })*@
+                @Html.ActionLink("Cerrar", "Cerrar", "Login", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - TransPort</p>
+        </footer>
+    </div>
+</body>
+</html>

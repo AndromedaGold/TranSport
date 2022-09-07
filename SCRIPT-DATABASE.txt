@@ -1,0 +1,88 @@
+
+CREATE TABLE TipoUsuario(
+IdTipoUsuario CHAR(1) PRIMARY KEY,
+Nombre VARCHAR(100),
+Habilitado INT
+)
+
+INSERT INTO TIPOUSUARIO VALUES ('O','Operador',1)
+INSERT INTO TIPOUSUARIO VALUES ('C','Coordinador',1)
+
+ALTER TABLE Coordinador
+ADD IdTipoUsuario CHAR(1) DEFAULT 'C'
+
+ALTER TABLE Coordinador
+ADD FOREIGN KEY (IdTipoUsuario) REFERENCES TipoUsuario(IdTipoUsuario)
+
+ALTER TABLE Operador
+ADD IdTipoUsuario CHAR(1) DEFAULT 'O'
+
+ALTER TABLE Operador
+ADD FOREIGN KEY (IdTipoUsuario) REFERENCES TipoUsuario(IdTipoUsuario)
+
+CREATE TABLE Rol(
+IdRol int identity(1,1) primary key,
+Nombre varchar(100),
+Descripcion varchar(300),
+Habilitado INT
+)
+--------------------------------------------------
+INSERT INTO Rol (Nombre,Descripcion,BHabilitado)
+values ('Vista Total','Puede ver todos los formularios',1)
+
+INSERT INTO Rol (Nombre,Descripcion,BHabilitado)
+values ('Vista Parcial','Puede registrar/editar/eliminar información',1)
+
+
+-----------------------------------------------------------
+CREATE TABLE Pagina(
+IdPagina int identity(1,1) primary key,
+Mensaje varchar(100),
+Accion varchar(50),
+Controlador varchar(50),
+Habilitado int
+)
+
+insert into Pagina(MENSAJE,ACCION,CONTROLADOR,BHABILITADO)
+values ('Venta Maquinaria','Index','VentaMaq',1)
+
+insert into Pagina(MENSAJE,ACCION,CONTROLADOR,BHABILITADO)
+values ('Renta Maquinaria','Index','RentaMaq',1)
+
+insert into Pagina(MENSAJE,ACCION,CONTROLADOR,BHABILITADO)
+values ('Extraccion','Index','Extraccion',1)
+
+insert into Pagina(MENSAJE,ACCION,CONTROLADOR,BHABILITADO)
+values ('Fabricacion','Index','Fabricacion',1)
+
+insert into Pagina(MENSAJE,ACCION,CONTROLADOR,BHABILITADO)
+values ('Mezclado','Index','Mezcaldo',1)
+
+insert into Pagina(MENSAJE,ACCION,CONTROLADOR,BHABILITADO)
+values ('Venta Material','Index','VentaMat',1)
+
+insert into Pagina(MENSAJE,ACCION,CONTROLADOR,BHABILITADO)
+values ('Coordinador','Index','Coordinador',1)
+
+insert into Pagina(MENSAJE,ACCION,CONTROLADOR,BHABILITADO)
+values ('Operador','Index','Operador',1)
+
+----------------------------------------------------------------------------
+
+CREATE TABLE RolPagina(
+IdRol INT REFERENCES Rol(IdRol),
+IdPagina INT REFERENCES Pagina(IdPagina),
+Habilitado int,
+primary key(IdRol,IdPagina)
+)
+
+CREATE TABLE Usuario(
+   IdUsuario int identity(1,1) primary key ,
+   NombreUsuario  varchar(100),
+   Contra varchar(64),
+   TipoUsuario char(1) REFERENCES TipoUsuario(IdTipoUsuario) ,
+   Id int,
+   IdRol int references Rol(IdRol),
+   Habilitado int
+)
+

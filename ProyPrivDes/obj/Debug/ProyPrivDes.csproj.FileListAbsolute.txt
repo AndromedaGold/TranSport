@@ -1,0 +1,130 @@
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\csc.exe
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\csc.exe.config
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\csc.rsp
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\csi.exe
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\csi.rsp
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\System.AppContext.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\vbc.exe
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\vbc.exe.config
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\vbc.rsp
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\VBCSCompiler.exe
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\ProyPrivDes.dll.config
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\ProyPrivDes.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\ProyPrivDes.pdb
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\System.Web.Helpers.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\System.Web.Mvc.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\System.Web.Razor.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\System.Web.Webpages.Deployment.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\System.Web.Webpages.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\System.Web.Webpages.Razor.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\System.Web.Razor.xml
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\System.Web.Webpages.xml
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\System.Web.Webpages.Deployment.xml
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\System.Web.Webpages.Razor.xml
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\System.Web.Helpers.xml
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\System.Web.Mvc.xml
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\obj\Debug\ProyPrivDes.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\obj\Debug\ProyPrivDes.pdb
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportSource.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.Shared.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\bin\stdole.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\obj\Debug\ProyPrivDes.csprojAssemblyReference.cache
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\obj\Debug\ProyPrivDes.csproj.CoreCompileInputs.cache
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\Seminario P\ProyPrivDes\ProyPrivDes\obj\Debug\ProyPrivDes.csproj.CopyComplete
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\csc.exe
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\csc.exe.config
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\csc.rsp
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\csi.exe
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\csi.rsp
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\System.AppContext.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\vbc.exe
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\vbc.exe.config
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\vbc.rsp
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\VBCSCompiler.exe
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\ProyPrivDes.dll.config
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\ProyPrivDes.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\ProyPrivDes.pdb
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportSource.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.Shared.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\System.Web.Helpers.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\System.Web.Mvc.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\System.Web.Razor.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\System.Web.Webpages.Deployment.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\System.Web.Webpages.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\System.Web.Webpages.Razor.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\stdole.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\System.Web.Razor.xml
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\System.Web.Webpages.xml
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\System.Web.Webpages.Deployment.xml
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\System.Web.Webpages.Razor.xml
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\System.Web.Helpers.xml
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\bin\System.Web.Mvc.xml
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\obj\Debug\ProyPrivDes.csproj.AssemblyReference.cache
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\obj\Debug\ProyPrivDes.csproj.CoreCompileInputs.cache
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\obj\Debug\ProyPrivDes.csproj.CopyComplete
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\obj\Debug\ProyPrivDes.dll
+C:\Users\lrivasr\OneDrive - Universidad Mariano Gálvez\Escritorio\ProyPrivDes\ProyPrivDes\obj\Debug\ProyPrivDes.pdb

@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Content/datatables.css" rel="stylesheet" />
+<link href="~/Content/cssTransPort.css" rel="stylesheet" />
+<link href="~/Content/jquery-ui.min.css" rel="stylesheet" />
+<h2>Extraccion</h2>
+
+<label>Ingrese Nombre</label>
+<input type="text" id="txtnombre" placeholder="Buscar extraccion"/>
+<input type="button" id="btnBuscar" value="Buscar" class="btn btn-success" />
+<input type="button" id="btnLimpiar" value="Limpiar" class="btn btn-info" />
+<hr />
+
+<input type="button" id="btnMostrarPDF" value="Ver Reporte" class="btn btn-primary" data-toggle="modal" data-target="#myModal2" />
+<input type="button" id="btnDescargarPDF" value="Descargar Reporte" class="btn btn-warning" />
+
+<!-- Modal -->
+<div id="myModal2" class="modal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Reporte Extraccion</h4>
+            </div>
+            <div class="modal-body" style="width:200px; height:500px">
+
+                <iframe id="RptExtraccion" style="width:500px; height:500px" frameborder="0" scrolling="yes"></iframe>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="tabla">
+
+</div>
+
+<!-- Lanzar modal con el boton -->
+<button onclick="abrirModal(0)" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Agregar Nuevo</button>
+<!-- Modal -->
+<div id="myModal" class="modal" role="dialog">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Extracción De Material</h4>
+            </div>
+            <div class="modal-body">
+                <table style="width:80%;margin:auto">
+                    <tr>
+                        <td width="40%">ID Extraccion</td>
+                        <td width="60%"><input class="borrar" type="text" id="txtId" readonly /></td>
+                    </tr>
+                    <tr>
+                        <td>Nombre Material</td>
+                        <td><input class="borrar obligatorio" type="text" id="txtNombreMaterial" /></td>
+                    </tr>
+                    <tr>
+                        <td>Cantidad Tons</td>
+                        <td><input class="borrar obligatorio" type="text" id="txtCantidadTons" /></td>
+                    </tr>
+                    <tr>
+                        <td>Fecha Extraccion</td>
+                        <td><input class="borrar obligatorio" id="datepickerExtraccion" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Pureza</td>
+                        <td><input class="borrar obligatorio" type="text" id="txtPureza" /></td>
+                    </tr>
+                    <tr>
+                        <td>Habilitado</td>
+                        <td><input class="borrar obligatorio" type="text" id="txtHabilitado" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button onclick="Agregar()" type="button" class="btn btn-primary">Aceptar</button>
+                <button id="btnCancelar" type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery-ui.min.js"></script>
+<script src="~/Scripts/Extraccion.js"></script>
+<script src="~/Scripts/datatables.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+

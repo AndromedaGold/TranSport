@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Transport" Class="ConexionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-TNB8S8L;Initial Catalog=Transport;Persist Security Info=True;User ID=transadmin" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TransportConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Combustible" Member="Combustibles">
+    <Type Name="Combustible">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Association Name="Combustible_RentaMaq" Member="RentaMaqs" ThisKey="Id" OtherKey="CombustibleId" Type="RentaMaq" />
+      <Association Name="Combustible_VentaMaq" Member="VentaMaqs" ThisKey="Id" OtherKey="CombustibleId" Type="VentaMaq" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Coordinador" Member="Coordinadors">
+    <Type Name="Coordinador">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Apellido" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Telefono" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FechaAlt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EstadoId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdTipoUsuario" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="bTieneUsuario" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Estado_Coordinador" Member="Estado" ThisKey="EstadoId" OtherKey="Id" Type="Estado" IsForeignKey="true" />
+      <Association Name="TipoUsuario_Coordinador" Member="TipoUsuario" ThisKey="IdTipoUsuario" OtherKey="IdTipoUsuario" Type="TipoUsuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Estado" Member="Estados">
+    <Type Name="Estado">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Estado_Coordinador" Member="Coordinadors" ThisKey="Id" OtherKey="EstadoId" Type="Coordinador" />
+      <Association Name="Estado_Operador" Member="Operadors" ThisKey="Id" OtherKey="EstadoId" Type="Operador" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EstadoMaq" Member="EstadoMaqs">
+    <Type Name="EstadoMaq">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Association Name="EstadoMaq_VentaMaq" Member="VentaMaqs" ThisKey="Id" OtherKey="EstadoId" Type="VentaMaq" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Extraccion" Member="Extraccions">
+    <Type Name="Extraccion">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NombreMaterial" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="CantidadTons" Type="System.Decimal" DbType="Decimal(16,2)" CanBeNull="true" />
+      <Column Name="FechaExtraccion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Pureza" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Habilitado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Fabricacion" Member="Fabricacions">
+    <Type Name="Fabricacion">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="TipoPisoId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Color" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CantidMaterPrim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CantidadFabri" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Habilitado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TipoPiso_Fabricacion" Member="TipoPiso" ThisKey="TipoPisoId" OtherKey="Id" Type="TipoPiso" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Finura" Member="Finuras">
+    <Type Name="Finura">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Association Name="Finura_Mezclado" Member="Mezclados" ThisKey="Id" OtherKey="FinuraId" Type="Mezclado" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Mezclado" Member="Mezclados">
+    <Type Name="Mezclado">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MateriaPrim" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Cantidad" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FinuraId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Habilitado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Finura_Mezclado" Member="Finura" ThisKey="FinuraId" OtherKey="Id" Type="Finura" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Operador" Member="Operadors">
+    <Type Name="Operador">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Apellido" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Telefono" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FechaAlt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EstadoId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdTipoUsuario" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="bTieneUsuario" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Operador_VentaMat" Member="VentaMats" ThisKey="Id" OtherKey="IdOperador" Type="VentaMat" />
+      <Association Name="Estado_Operador" Member="Estado" ThisKey="EstadoId" OtherKey="Id" Type="Estado" IsForeignKey="true" />
+      <Association Name="TipoUsuario_Operador" Member="TipoUsuario" ThisKey="IdTipoUsuario" OtherKey="IdTipoUsuario" Type="TipoUsuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pagina" Member="Paginas">
+    <Type Name="Pagina">
+      <Column Name="IdPagina" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Mensaje" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Accion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Controlador" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Habilitado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Pagina_RolPagina" Member="RolPaginas" ThisKey="IdPagina" OtherKey="IdPagina" Type="RolPagina" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RentaMaq" Member="RentaMaqs">
+    <Type Name="RentaMaq">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Color" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Marca" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Modelo" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Precio" Type="System.Decimal" DbType="Decimal(16,2)" CanBeNull="true" />
+      <Column Name="CombustibleId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TipoMaqId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaRenta" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Habilitado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="RentaMaq_VentaMat" Member="VentaMats" ThisKey="Id" OtherKey="IdRentaMaq" Type="VentaMat" />
+      <Association Name="Combustible_RentaMaq" Member="Combustible" ThisKey="CombustibleId" OtherKey="Id" Type="Combustible" IsForeignKey="true" />
+      <Association Name="TipoMaq_RentaMaq" Member="TipoMaq" ThisKey="TipoMaqId" OtherKey="Id" Type="TipoMaq" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Rol" Member="Rols">
+    <Type Name="Rol">
+      <Column Name="IdRol" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="Habilitado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Rol_RolPagina" Member="RolPaginas" ThisKey="IdRol" OtherKey="IdRol" Type="RolPagina" />
+      <Association Name="Rol_Usuario" Member="Usuarios" ThisKey="IdRol" OtherKey="IdRol" Type="Usuario" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RolPagina" Member="RolPaginas">
+    <Type Name="RolPagina">
+      <Column Name="IdRol" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdPagina" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Habilitado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Pagina_RolPagina" Member="Pagina" ThisKey="IdPagina" OtherKey="IdPagina" Type="Pagina" IsForeignKey="true" />
+      <Association Name="Rol_RolPagina" Member="Rol" ThisKey="IdRol" OtherKey="IdRol" Type="Rol" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoMaq" Member="TipoMaqs">
+    <Type Name="TipoMaq">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Association Name="TipoMaq_RentaMaq" Member="RentaMaqs" ThisKey="Id" OtherKey="TipoMaqId" Type="RentaMaq" />
+      <Association Name="TipoMaq_VentaMaq" Member="VentaMaqs" ThisKey="Id" OtherKey="TipoMaqId" Type="VentaMaq" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoPiso" Member="TipoPisos">
+    <Type Name="TipoPiso">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Association Name="TipoPiso_Fabricacion" Member="Fabricacions" ThisKey="Id" OtherKey="TipoPisoId" Type="Fabricacion" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoUsuario" Member="TipoUsuarios">
+    <Type Name="TipoUsuario">
+      <Column Name="IdTipoUsuario" Type="System.Char" DbType="Char(1) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Habilitado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TipoUsuario_Coordinador" Member="Coordinadors" ThisKey="IdTipoUsuario" OtherKey="IdTipoUsuario" Type="Coordinador" />
+      <Association Name="TipoUsuario_Operador" Member="Operadors" ThisKey="IdTipoUsuario" OtherKey="IdTipoUsuario" Type="Operador" />
+      <Association Name="TipoUsuario_Usuario" Member="Usuarios" ThisKey="IdTipoUsuario" OtherKey="TipoUsuario" Type="Usuario" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Usuario" Member="Usuarios">
+    <Type Name="Usuario">
+      <Column Name="IdUsuario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NombreUsuario" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Contra" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TipoUsuario" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdRol" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Habilitado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Rol_Usuario" Member="Rol" ThisKey="IdRol" OtherKey="IdRol" Type="Rol" IsForeignKey="true" />
+      <Association Name="TipoUsuario_Usuario" Member="TipoUsuario1" ThisKey="TipoUsuario" OtherKey="IdTipoUsuario" Type="TipoUsuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VentaMaq" Member="VentaMaqs">
+    <Type Name="VentaMaq">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Color" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Peso" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Marca" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Modelo" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Precio" Type="System.Decimal" DbType="Decimal(16,2)" CanBeNull="true" />
+      <Column Name="CombustibleId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TipoMaqId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaVenta" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Habilitado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EstadoId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Combustible_VentaMaq" Member="Combustible" ThisKey="CombustibleId" OtherKey="Id" Type="Combustible" IsForeignKey="true" />
+      <Association Name="EstadoMaq_VentaMaq" Member="EstadoMaq" ThisKey="EstadoId" OtherKey="Id" Type="EstadoMaq" IsForeignKey="true" />
+      <Association Name="TipoMaq_VentaMaq" Member="TipoMaq" ThisKey="TipoMaqId" OtherKey="Id" Type="TipoMaq" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VentaMat" Member="VentaMats">
+    <Type Name="VentaMat">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NombreMat" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Cantidad" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Cliente" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Destino" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Precio" Type="System.Decimal" DbType="Decimal(16,2)" CanBeNull="true" />
+      <Column Name="FechaVent" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Habilitado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdRentaMaq" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Operador_VentaMat" Member="Operador" ThisKey="IdOperador" OtherKey="Id" Type="Operador" IsForeignKey="true" />
+      <Association Name="RentaMaq_VentaMat" Member="RentaMaq" ThisKey="IdRentaMaq" OtherKey="Id" Type="RentaMaq" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
