@@ -173,7 +173,7 @@ namespace ProyPrivDes.Controllers
             reporte.FileName = Server.MapPath("/Reportes/RptVentaMaq.rpt");
 
             //conexion para el reporte
-            var coninfo = ReportesConexion.getConexion();
+            var coninfo = ReportesConexion.GetConexion();
             TableLogOnInfo logoninfo = new TableLogOnInfo();
             Tables tables;
             tables = reporte.Database.Tables;
